@@ -10,6 +10,10 @@
 body {
 background-color: #E8E8E8;
 overflow-x: hidden;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 @font-face{
@@ -52,12 +56,12 @@ overflow-x: hidden;
 
 .text-scramble {
   font-size: 2rem;
-  background-color: #EA7639;
+  background-color: #FF7F3C;
   text-align: center;
 }
 
 .text-scramble span {
-  background-color: #EA7639;
+  background-color: #FF7F3C;
   font-size: 2rem;
 }
 
@@ -196,11 +200,11 @@ ul {
   #description2 p span,
   #description3 p span,
   #description4 p span {
-    background-color: #EA7639;
+    background-color: #FF7F3C;
   }
 
 .proj6 {
-  padding-bottom: 20%;
+  padding-bottom: 15%;
 }
 
 

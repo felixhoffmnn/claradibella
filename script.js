@@ -126,3 +126,29 @@ console.log("L'elemento con id 'text-scramble' non è stato trovato");
 }
 
 //fine codice per scramble text
+
+// When the user scrolls down 50px from the top of the document, resize the header's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("about").style.filter = `blur(2px)`;
+  } else {
+    document.getElementById("about").style.filter = `blur(0px)`;
+  }
+}
+
+const aboutElem = document.getElementById("about");
+
+aboutElem.addEventListener("mouseover", function() {
+  aboutElem.style.filter = `blur(0px)`;
+});
+
+aboutElem.addEventListener("mouseout", function() {
+  // torna al valore di filtro precedentemente impostato in base allo scroll
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    aboutElem.style.filter = `blur(2px)`;
+  } else {
+    aboutElem.style.filter = `blur(0px)`;
+  }
+});
