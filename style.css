@@ -80,11 +80,30 @@ user-select: none;
   width: 100%;
 }
 
+
+/* definisco spaziatura vuota */
+.offset-1 {
+  margin-left: 8.33%;
+}
+
+.offset-2 {
+  margin-left: 16.66%;
+}
+
+.offset-3 {
+  margin-left: 25%;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones:  sempre larghezza colonna*/
 
   [class*="col-"] {
     width: 100%;
+    flex-direction: row;
+  }
+
+  [class*="offset-"] {
+    margin-left: 0%;
     flex-direction: row;
   }
 }

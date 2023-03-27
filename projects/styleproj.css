@@ -2,30 +2,102 @@
     font-family: "Neue Machina", sans-serif;
     font-size: 6rem;
     font-weight: 500;
-    padding: 8%;
+    padding-top: 8%;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-}
+    -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+} 
 
 .proj-attribute {
     font-family: "roc-grotesk", sans-serif;
     font-size: 1.5rem;
+    line-height: 1.9rem;
     /* padding-left: 20%; */
     font-weight: 400;
     padding-bottom: 1.5%;
     align-self: flex-start;
     text-align: right;
 }
+
+.data {
+    font-family: "roc-grotesk", sans-serif;
+    padding-left: 2%;
+    font-size: 1.5rem;
+}
+
+mark {
+    -webkit-animation: 1s highlight  normal forwards;
+    animation: 1s highlight  normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+   
+}
+
+@-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+
 .video-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
+    width: 80%;
+    height: 500px;
+    margin-left:10%;
+    top: 10vh;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
 }
-.video-trailer {
-    border-radius: 10px;
+
+.video-container video {
+    position: absolute;
+    width: 110%;
+
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-bottom: 5%;
+}
+
+.brief {
+    font-family: "roc-grotesk", sans-serif;
+    padding-top: 5%;
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+    position: sticky;
     
+}
+
+.cartiglio,
+.video-container,
+.brief {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+    .video-container {
+        height: 200px;
+    }
 }
