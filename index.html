@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claravaggio</title>
+    <!--link per rendere il css funzionale per qualsiasi browser, reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/wgf7pqs.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+    
+</head>
+
+<body>
+    <header class="myHeader">
+         <a class="menu-voice"><p>works</p></a>
+        <a class="menu-voice" id="about"><p>about</p></a>
+    </header>
+
+    <div class="presentationContainer">
+        <div class="presentation" id="name">Clara Di Bella
+            <div class="text-scramble"><span>Visual Designer</span></div>
+        </div>
+    </div>
+
+    <div class="proj-container">
+        <ul>
+            <li>
+                <div class="proj proj1" onmouseover="imageReveal(document.getElementById('description1'))">
+                    <div class="text">EXHOIL </div> 
+                    <div class="description" id="description1"><img src="assets/cover/exhoil.jpg" class="follow-img" id="cover1">
+                 <p><span>Speculative Design</span></p>
+                    </div>
+                </div>
+            </li>
+
+            <li><div class="proj proj2" onmouseover="imageReveal(document.getElementById('description2'))">
+                <div class="text">Anthropogenic Narratives</div> 
+                <div class="description" id="description2"><img src="assets/cover/I.C.E._3.jpg" class="follow-img" id="cover2">
+                    <p><span>Web design <br>
+                       and development</span></p>
+                </div>
+            </div>
+        </li>
+            
+            <li><div class="proj proj3" onmouseover="imageReveal(document.getElementById('description3'))">
+                <div class="text">Pinocchio</div>
+                <div class="description" id="description3"><img src="assets/cover/pinocchio.jpg" class="follow-img" id="cover3">
+                    <p><span>videogame design <br>
+                        and development</span></p>
+                </div>
+            </div>
+        </li>
+
+            <li> <div class="proj proj4" onmouseover="imageReveal(document.getElementById('description4'))">
+                <div class="text">Rize</div>
+                <div class="description" id="description4"><img src="assets/cover/rize.jpg" class="follow-img" id="cover4">
+                    <p><span>UX and UI design</span></p>
+                </div>
+            </div></li>
+           
+            <li><div class="proj proj5">
+                <div class="text">Unplug</div>
+            </div></li>
+            
+            <li><div class="proj proj6">
+                <div class="text">Mermaid</div>
+            </div></li>
+        </ul>
+    
+    </div>
+ 
+    <footer>
+        <p class="footer-voice">@claravaggio</p>
+        <p class="footer-voice">Clara Di Bella 2023</p>
+        <p class="footer-voice">claradb10@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
