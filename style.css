@@ -6,6 +6,27 @@
     vertical-align: baseline;
    
   }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+ 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF7F3C; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
 
 body {
 background-color: #E8E8E8;
@@ -104,7 +125,13 @@ user-select: none;
     font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
 
+a:link, a:visited, a:hover {
+  color: black;
+}
 
 /* blurrare elementi non hoverati */
 ul:hover li:not(:hover) {

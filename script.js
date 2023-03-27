@@ -110,7 +110,7 @@ const phrases = [
     'Front-end nerd',
     'Communication designer',
     'Communication design student',
-    'Ironic girl'
+    'Dead inside'
 ];
 let counter = 0;
 const next = () => {
