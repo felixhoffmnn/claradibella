@@ -28,8 +28,8 @@
 }
 
 mark {
-    -webkit-animation: 1s highlight  normal forwards;
-    animation: 1s highlight  normal forwards;
+    -webkit-animation: 1s highlight  normal 0.5s forwards;
+    animation: 1s highlight  normal 0.5s forwards;
     background-color: none;
     background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
     background-size: 200% 100%;
@@ -95,20 +95,35 @@ mark {
 }
 
 .img-container {
-    border-radius: 20px;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
-    padding: 2%;
+    border-radius: 20px;
 }
 
-img {
-    width: 110%;
+.img-container2 {
+    height: 80vh;
+    overflow: hidden;
     border-radius: 20px;
+}
+
+
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+.img-container2 img {
+    width:200%;
 }
 
 .inline-img {
     display: flex;
     justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
 }
 
 @media only screen and (max-width: 768px) {

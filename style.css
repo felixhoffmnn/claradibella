@@ -55,6 +55,9 @@ user-select: none;
 .col-4 {
   width: 33.33%;
 }
+.col-4-5 {
+  width: 40%;
+}
 .col-5 {
   width: 41.66%;
 }
@@ -96,6 +99,9 @@ user-select: none;
 .offset-4 {
   margin-left: 33.33%;
 }
+.offset-4-5 {
+  margin-left: 3%;
+}
 
 .offset-5 {
   margin-left: 41.66%;
@@ -121,6 +127,7 @@ user-select: none;
     margin-left: 0%;
     flex-direction: row;
   }
+
 }
 
 
