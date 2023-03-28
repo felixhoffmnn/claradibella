@@ -93,6 +93,21 @@ user-select: none;
 .offset-3 {
   margin-left: 25%;
 }
+.offset-4 {
+  margin-left: 33.33%;
+}
+
+.offset-5 {
+  margin-left: 41.66%;
+}
+
+.offset-6 {
+  margin-left: 50%;
+}
+
+.offset-7 {
+  margin-left: 58.33%;;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones:  sempre larghezza colonna*/
