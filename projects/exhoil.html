@@ -23,9 +23,9 @@
    </header>
 
    
-
+<div class="container-mobile">
     <div class="video-container">
-        <video class="col-10 video-trailer" autoplay loop muted>
+        <video class="video-trailer" autoplay loop muted>
             <source src="../assets/exhoil/exhoil_trailer2.mp4" type="video/mp4" />
           </video>
     </div>
@@ -34,7 +34,6 @@
         <div class="proj-title col-6">EXHOIL</div>
         <div class="proj-attribute col-4"><mark>Speculative design<br>Branding</mark></div>
     </div>
-
     <div class="data col-5 offset-1">2023</div>
 
     <div class="brief col-8 offset-1">
@@ -44,19 +43,19 @@
         Exhoil starts from the element of soil.</div>
     </div>
 
-    <div class="inline-img">
+    <div class="inline-img lozad blur-up">
         <div class="col-4-5 img-container">
         <img src="../assets/exhoil/SOIL_03.jpg">
         </div>
 
-        <div class="col-4-5 offset-4-5 img-container">
+        <div class="col-4-5 offset-4-5 img-container lozad blur-up">
         <img src="../assets/exhoil/SOIL_06.jpg">
         </div>
   </div>
 
-  <div class="inline-img col-10 offset-1">
-    <div class="img-container2">
-    <img src="../assets/exhoil/SOIL_05.jpg">
+  <div class="inline-img col-10 offset-1 lozad blur-up">
+    <div class="img-container-big">
+    <img src="../assets/exhoil/SOIL_01.jpg">
   </div>
   </div>
 
@@ -67,7 +66,7 @@
     Exhoil starts from the element of soil.</div>
 </div>
 
-<div class="inline-img">
+<div class="inline-img lozad blur-up">
     <div class="col-4-5 img-container">
     <img src="../assets/exhoil/SOIL_04.jpg">
     </div>
@@ -85,18 +84,49 @@
     Exhoil starts from the element of soil.</div>
 </div>
 
-<div class="inline-img">
-    <div class="col-3 img-container2">
+<div class="inline-img lozad blur-up">
+    <div class="col-3 img-container-vert">
     <img src="../assets/exhoil/SOIL_04.jpg">
     </div>
 
-    <div class="col-3 offset-4-5 img-container2">
-    <img src="../assets/exhoil/SOIL_07.jpg">
+    <div class="col-3 offset-4-5 img-container-vert">
+    <img src="../assets/exhoil/SOIL_09.jpg">
     </div>
 
-    <div class="col-3 offset-4-5 img-container2">
-        <img src="../assets/exhoil/SOIL_07.jpg">
+    <div class="col-3 offset-4-5 img-container-vert">
+        <img src="../assets/exhoil/SOIL_08.jpg">
         </div>
+    </div>
+
+    <div class="nav-proj col-10 offset-1">
+        <div id="prev-proj" class="text-scramble-1">Previous project</div>
+        <div id="next-proj" class="text-scramble-2">Next project</div>
+    </div>
 </div>
+
+
+
+<footer>
+    <a href="https://www.instagram.com/claravaggio/" target="_blank" class="footer-voice">@claravaggio</a>
+    <p class="footer-voice">Clara Di Bella &#169; 2023</p>
+    <p class="footer-voice">claradb10@gmail.com</p>
+</footer>
+
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/lozad@1.14.0/dist/lozad.min.js"></script>
+<script src="projscript.js"></script>
+<script>
+
+   const observer = lozad('.lozad', {
+  rootMargin: '50px 0px', // margine root per il controllo dell'area di visualizzazione dell'immagine
+  threshold: 0.1, // soglia di visibilità dell'immagine
+  loaded: function(el) { // funzione richiamata quando l'immagine è stata caricata
+    el.classList.add('blur-down');
+    el.style.opacity = 1;
+  }
+});
+observer.observe();
+
+</script>
 
 </body>

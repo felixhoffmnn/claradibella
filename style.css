@@ -23,10 +23,10 @@
   border-radius: 10px;
 }
 
-/* Handle on hover */
+/* Handle on hover
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
-}
+} */
 
 body {
 background-color: #E8E8E8;
@@ -50,7 +50,7 @@ user-select: none;
   width: 16.66%;
 }
 .col-3 {
-  width: 25%;
+  width: 25.66%;
 }
 .col-4 {
   width: 33.33%;
@@ -126,6 +126,10 @@ user-select: none;
   [class*="offset-"] {
     margin-left: 0%;
     flex-direction: row;
+  }
+
+  footer {
+    font-size: 0.5rem;
   }
 
 }
