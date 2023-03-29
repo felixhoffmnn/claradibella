@@ -1,0 +1,79 @@
+#works {
+    filter:blur(2px);
+    transition: filter .3s; 
+}
+
+#works:hover {
+    filter:blur(0px);
+}
+
+.presentation {
+    display: flex;
+    margin-left: 8.3%;
+    padding-top: 8%;
+    -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+#foto {
+    padding-right: 3%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#foto img {
+    width:95%;
+    border-radius: 20px;
+}
+
+.pres-title {
+    font-size: 4rem;
+}
+
+mark {
+    -webkit-animation: 1s highlight  normal 0.5s forwards;
+    animation: 1s highlight  normal 0.5s forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
+@-webkit-keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+  
+  @keyframes highlight {
+    to {
+      background-position: 0 0;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .container-mobile  {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .presentation {
+        display: block;
+        padding-left: 0%;
+        margin-left: 0%;
+        width: 90%;
+    }
+
+    #foto {
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+    #foto img {
+        width: 100%;
+        padding-right: 0%;
+        
+    }
+
+  }
+    
