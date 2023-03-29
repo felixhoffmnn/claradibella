@@ -1,3 +1,12 @@
+#about {
+    filter:blur(2px);
+    transition: filter .3s; 
+}
+
+#about:hover {
+    filter:blur(0px);
+}
+
 .cartiglio {
     font-family: "Neue Machina", sans-serif;
     font-size: 6rem;

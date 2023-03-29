@@ -142,6 +142,7 @@ user-select: none;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    z-index: 4;
 }
 
 .menu-voice {
@@ -225,6 +226,11 @@ a {
 a:link, a:visited, a:hover {
   color: black;
 }
+
+/* per transition blur sulle scritte, ma fa effetto strano foto */
+/* li {
+  transition: filter .5s; 
+} */
 
 /* blurrare elementi non hoverati */
 ul:hover li:not(:hover) {

@@ -108,7 +108,7 @@ const fx = new TextScramble(textScrambleElems);
 const phrases = [
     'Visual designer',
     'Front-end nerd',
-    'Communication designer',
+    'Troublemaker',
     'Communication design student',
     'Dead inside'
 ];
