@@ -1,5 +1,14 @@
-console.log("hey");
-
+//codice per deblurrare le immagini allo scroll
+const observer = lozad('.lozad', {
+  rootMargin: '50px 0px', // margine root per il controllo dell'area di visualizzazione dell'immagine
+  threshold: 0.1, // soglia di visibilità dell'immagine
+  loaded: function(el) { // funzione richiamata quando l'immagine è stata caricata
+    el.classList.add('blur-down');
+    el.style.opacity = 1;
+  }
+});
+observer.observe();
+//fine codice per deblurrare immagini allo scroll
 
 class TextScramble {
     constructor(el) {
@@ -62,12 +71,12 @@ class TextScramble {
 const textScrambleElems = document.querySelectorAll("[class*=text-scramble]");
 
 if (textScrambleElems) {
-  const fxArr = [];
-  const phrasesArr = [    ['Previous project', 'Mermaid'],
+  var fxArr = [];
+  var phrasesArr = [    ['Previous project', 'Mermaid'],
     ['Next project', 'Anthropogenic Narratives'],
     ['Graphic designer', 'Art director', 'Illustrator']
   ];
-  let counterArr = new Array(phrasesArr.length).fill(0);
+  var counterArr = new Array(phrasesArr.length).fill(0);
 
   for (let i = 0; i < textScrambleElems.length; i++) {
     const fx = new TextScramble(textScrambleElems[i]);

@@ -1,17 +1,30 @@
 
 //codice per mostrare immagini e testo all'hover
+// function imageReveal(textClass) {
+    
+//   document.addEventListener("mousemove", (e) => {
+//       var x = e.clientX;
+//       //var y = e.clientY;
+    
+//        //imgClass.style.left = `${x + 100}px`;
+//        textClass.style.left = `${x + 500}px`;
+//        //myClass.style.top = `${y + 50}px`;
+
+//       });
+//   }
+
 function imageReveal(textClass) {
     
   document.addEventListener("mousemove", (e) => {
       var x = e.clientX;
-      //var y = e.clientY;
     
-       //imgClass.style.left = `${x + 100}px`;
-       textClass.style.left = `${x + 500}px`;
-       //myClass.style.top = `${y + 50}px`;
+      // Imposta la posizione a 0px se la larghezza della finestra è inferiore a 768px
+      const isMobile = window.innerWidth < 768;
+      const positionX = isMobile ? 150 : x + 500;
 
-      });
-  }
+      textClass.style.left = `${positionX}px`;
+  });
+}
 
 
   //codice per blurrare e nascondere il nome quando scrolli

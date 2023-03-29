@@ -115,25 +115,6 @@ user-select: none;
   margin-left: 58.33%;;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones:  sempre larghezza colonna*/
-
-  [class*="col-"] {
-    width: 100%;
-    flex-direction: row;
-  }
-
-  [class*="offset-"] {
-    margin-left: 0%;
-    flex-direction: row;
-  }
-
-  footer {
-    font-size: 0.5rem;
-  }
-
-}
-
 
 .myHeader {
     position: fixed;
@@ -173,11 +154,6 @@ user-select: none;
   font-size: 2rem;
   background-color: #FF7F3C;
   text-align: center;
-}
-
-.text-scramble span {
-  background-color: #FF7F3C;
-  font-size: 2rem;
 }
 
 .proj-container {
@@ -352,11 +328,47 @@ footer {
     font-weight: 400;
 }
 
+@media only screen and (max-width: 800px) {
+  /* For mobile phones:  sempre larghezza colonna*/
 
+  [class*="col-"] {
+    width: 100%;
+    flex-direction: row;
+  }
 
+  [class*="offset-"] {
+    margin-left: 0%;
+    flex-direction: row;
+  }
 
+  #name {
+    font-size: 3.2rem;
+  }
 
+  .text-scramble {
+    font-size:1.5rem;
+  }
 
+  footer {
+    font-size: 1rem;
+
+  }
+
+  .proj {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .proj-container {
+    padding-bottom: 35%;
+  }
+
+  .container-mobile  {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+}
 
 
 /* mette il padding interno agli elementi */

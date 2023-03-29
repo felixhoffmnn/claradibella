@@ -10,7 +10,7 @@
 .cartiglio {
     font-family: "Neue Machina", sans-serif;
     font-size: 6rem;
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 8%;
     width: 100%;
     display: flex;
@@ -133,11 +133,11 @@ mark {
 img {
     width: 100%;
     border-radius: 20px;
-    transition: transform .9s;  
+    transition: transform 1.5s;  
 }
 
 img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .img-container-vert img {
@@ -164,6 +164,24 @@ img:hover {
     opacity: 0;
   }
 
+  .i-container {
+    width: 83%;
+    margin-left: 8.3%;
+    margin-bottom: 3%;
+    padding: 0% 0;
+  }
+
+  .credits {
+    font-family: "roc-grotesk", sans-serif;
+    text-align: center;
+    padding-bottom: 4%;
+  }
+
+  .credits p {
+    font-weight: 600;
+    padding-bottom: 1%;
+  }
+
   .nav-proj {
     display: flex;
     justify-content: space-between;
@@ -182,7 +200,7 @@ img:hover {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     .container-mobile  {
         padding-left: 5%;
@@ -203,7 +221,7 @@ img:hover {
 
     .cartiglio {
         font-size: 4rem;
-        padding-top: 22%;
+        padding-top: 30%;
     }
 
     .proj-attribute {
@@ -215,7 +233,13 @@ img:hover {
         width:100%;
     }
 
-    .img-container-vert, .img-container-big {
-        height: 40vh;
+    .img-container-vert, .img-container-big, .img-container {
+        height: 30vh;
+        margin-bottom: 8%;
+    }
+
+    .i-container {
+        width: 100%;
+        margin-left: 0%;
     }
 }
