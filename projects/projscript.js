@@ -74,7 +74,8 @@ if (textScrambleElems) {
   var fxArr = [];
   var phrasesArr = [    ['Previous project', 'Mermaid'],
     ['Next project', 'Anthropogenic Narratives'],
-    ['Graphic designer', 'Art director', 'Illustrator']
+    ['Previous project', 'Exhoil'],
+    ['Previous project', 'Exhoil']
   ];
   var counterArr = new Array(phrasesArr.length).fill(0);
 

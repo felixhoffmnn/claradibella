@@ -117,7 +117,7 @@ mark {
 }
 
 .img-container-vert {
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 3%;
@@ -141,7 +141,7 @@ img:hover {
 }
 
 .img-container-vert img {
-    width: 300%;
+    width: 100%;
     border-radius: 20px;
 }
 
