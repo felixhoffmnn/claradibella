@@ -230,7 +230,13 @@ ul {
 .proj3:hover #cover3,
 .proj3:hover #description3,
 .proj4:hover #cover4,
-.proj4:hover #description4 {
+.proj4:hover #description4,
+.proj5:hover #cover5,
+.proj5:hover #description5,
+.proj6:hover #cover6,
+.proj6:hover #description6,
+.proj7:hover #cover7,
+.proj7:hover #description7 {
     display: block; 
     -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -292,7 +298,10 @@ ul {
   #description1 p, 
   #description2 p, 
   #description3 p, 
-  #description4 p {
+  #description4 p, 
+  #description5 p, 
+  #description6 p, 
+  #description7 p {
     display: block;
     padding-left: 50%;
     top: 100px;
@@ -301,12 +310,15 @@ ul {
   #description1 p span,
   #description2 p span,
   #description3 p span,
-  #description4 p span {
+  #description4 p span, 
+  #description5 p span, 
+  #description6 p span, 
+  #description7 p span {
     background-color: #FF7F3C;
   }
 
-.proj6 {
-  padding-bottom: 15%;
+.proj7 {
+  padding-bottom: 10%;
 }
 
 

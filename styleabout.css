@@ -1,9 +1,9 @@
-#works {
+#works, #linkedin, #curriculum {
     filter:blur(2px);
     transition: filter .3s; 
 }
 
-#works:hover {
+#works:hover, #linkedin:hover, #curriculum:hover {
     filter:blur(0px);
 }
 
@@ -27,7 +27,27 @@
 }
 
 .pres-title {
-    font-size: 4rem;
+    font-family: "Neue Machina", sans-serif;
+    font-size: 3.5rem;
+    margin-top: 3%;
+    padding-bottom: 8%;
+}
+
+.pres-text {
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    width: 53.5%;
+}
+
+#curriculum, #linkedin {
+    position: absolute;
+    bottom: 4%;
+}
+
+#linkedin {
+    right: 5%;
 }
 
 mark {

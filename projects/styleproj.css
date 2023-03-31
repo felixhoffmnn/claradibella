@@ -11,7 +11,7 @@
     font-family: "Neue Machina", sans-serif;
     font-size: 6rem;
     font-weight: 600;
-    padding-top: 8%;
+    padding-top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -67,8 +67,8 @@ mark {
     display: flex;
     justify-content: center;
     width: 83%;
-    height: 500px;
-    top: 10vh;
+    height: 600px;
+    top: 5vh;
     
     -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both; 
@@ -76,7 +76,8 @@ mark {
 
 .video-container video {
     position: absolute;
-    width: 110%;
+    width: 100%;
+    margin-top: -3.5%;
 
 }
 
@@ -108,12 +109,20 @@ mark {
     display: flex;
     justify-content: center;
     border-radius: 20px;
+   
 }
 
 .img-container {
     height: 40vh;
     overflow: hidden;
     border-radius: 20px;
+}
+.img-container2 {
+    height: 56vh;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 .img-container-vert {
@@ -130,6 +139,13 @@ mark {
     margin-top: 3%;
 }
 
+.img-container-big2 {
+    height: 87vh;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: 3%;
+}
+
 img {
     width: 100%;
     border-radius: 20px;
@@ -137,7 +153,7 @@ img {
 }
 
 img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .img-container-vert img {
@@ -159,9 +175,17 @@ img:hover {
     transition: filter 2500ms;
   }
   
-  
   .lozad {
     opacity: 0;
+  }
+
+  .play {
+    font-family: "Neue Machina", sans-serif;
+    text-decoration: underline;
+    font-size: 2rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
   }
 
   .i-container {
@@ -208,7 +232,7 @@ img:hover {
     }
 
     .video-container {
-        height: 200px;
+        height: 230px;
         margin-left: 0%;
         width: 100%;
     }
@@ -233,8 +257,13 @@ img:hover {
         width:100%;
     }
 
-    .img-container-vert, .img-container-big, .img-container {
+    .img-container-vert, .img-container-big, .img-container, .img-container-big2 {
         height: 30vh;
+        margin-bottom: 8%;
+    }
+
+    .img-container2 {
+        height:40vh;
         margin-bottom: 8%;
     }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claravaggio - A.N.</title>
+    <title>Claravaggio - Exhoil</title>
     <!--link per rendere il css funzionale per qualsiasi browser, reset css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://use.typekit.net/wgf7pqs.css">
@@ -31,8 +31,8 @@
     </div>
 
     <div class="cartiglio">
-        <div class="proj-title col-6">Anthropogenic  <br>Narratives</div>
-        <div class="proj-attribute col-4"><mark>Web design<br>Front-end development</mark></div>
+        <div class="proj-title col-6">Mermaid</div>
+        <div class="proj-attribute col-4"><mark>Creative coding</mark></div>
     </div>
     <div class="data col-5 offset-1">2023</div>
 
@@ -125,12 +125,12 @@
 
 <div class="credits col-10 offset-1">
     <p>Team</p>
-    <span>Francesco Bonetti / Giuliana Concialini / Sarah Cosentino / Clara Di Bella / Agostino Sanna</span>
+    <span>Chiara Compagnoni / Clara Di Bella / Francesco Scarfone / Matteo Semeraro / Costanza Turi / Beatrice Tronconi</span>
 </div>
 
     <div class="nav-proj col-10 offset-1">
-        <div id="prev-proj" class="text-scramble-3">Previous project</div>
-        <div id="next-proj" class="text-scramble-4">Next project</div>
+      <a href="5-unplug.html"><div id="prev-proj" class="text-scramble-1">Previous project</div></a>
+      <a href="7-mariodagrada.html"><div id="next-proj" class="text-scramble-2">Next project</div></a>
     </div>
 </div>
 
@@ -142,5 +142,32 @@
 
 <script src="https://cdn.jsdelivr.net/npm/lozad@1.14.0/dist/lozad.min.js"></script>
 <script src="projscript.js"></script>
+
+<script>
+    const textScrambleElems = document.querySelectorAll("[class*=text-scramble]");
+
+if (textScrambleElems) {
+  var fxArr = [];
+  var phrasesArr = [    ['Previous project', 'Unplug'],
+    ['Next project', 'Mario Dagrada'],
+  ];
+  var counterArr = new Array(phrasesArr.length).fill(0);
+
+  for (let i = 0; i < textScrambleElems.length; i++) {
+    const fx = new TextScramble(textScrambleElems[i]);
+    fxArr.push(fx);
+    next(i);
+  }
+
+  function next(index) {
+    fxArr[index].setText(phrasesArr[index][counterArr[index]]).then(() => {
+      setTimeout(() => next(index), 1500);
+    });
+    counterArr[index] = (counterArr[index] + 1) % phrasesArr[index].length;
+  }
+} else {
+  console.log("L'elemento con classe 'text-scramble' non è stato trovato");
+}
+</script>
 
 </body>

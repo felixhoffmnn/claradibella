@@ -68,29 +68,3 @@ class TextScramble {
   }
 
 
-const textScrambleElems = document.querySelectorAll("[class*=text-scramble]");
-
-if (textScrambleElems) {
-  var fxArr = [];
-  var phrasesArr = [    ['Previous project', 'Mermaid'],
-    ['Next project', 'Anthropogenic Narratives'],
-    ['Previous project', 'Exhoil'],
-    ['Previous project', 'Exhoil']
-  ];
-  var counterArr = new Array(phrasesArr.length).fill(0);
-
-  for (let i = 0; i < textScrambleElems.length; i++) {
-    const fx = new TextScramble(textScrambleElems[i]);
-    fxArr.push(fx);
-    next(i);
-  }
-
-  function next(index) {
-    fxArr[index].setText(phrasesArr[index][counterArr[index]]).then(() => {
-      setTimeout(() => next(index), 1500);
-    });
-    counterArr[index] = (counterArr[index] + 1) % phrasesArr[index].length;
-  }
-} else {
-  console.log("L'elemento con classe 'text-scramble' non è stato trovato");
-}

@@ -129,8 +129,8 @@
 </div>
 
     <div class="nav-proj col-10 offset-1">
-        <div id="prev-proj" class="text-scramble-1">Previous project</div>
-        <div id="next-proj" class="text-scramble-2">Next project</div>
+      <a href="7-mariodagrada.html"><div id="prev-proj" class="text-scramble-1">Previous project</div></a>
+      <a href="2-anthropogenic.html"><div id="next-proj" class="text-scramble-2">Next project</div></a>
     </div>
 </div>
 
@@ -142,5 +142,32 @@
 
 <script src="https://cdn.jsdelivr.net/npm/lozad@1.14.0/dist/lozad.min.js"></script>
 <script src="projscript.js"></script>
+
+<script>
+    const textScrambleElems = document.querySelectorAll("[class*=text-scramble]");
+
+if (textScrambleElems) {
+  var fxArr = [];
+  var phrasesArr = [    ['Previous project', 'Mario Dagrada'],
+    ['Next project', 'Anthropogenic Narratives'],
+  ];
+  var counterArr = new Array(phrasesArr.length).fill(0);
+
+  for (let i = 0; i < textScrambleElems.length; i++) {
+    const fx = new TextScramble(textScrambleElems[i]);
+    fxArr.push(fx);
+    next(i);
+  }
+
+  function next(index) {
+    fxArr[index].setText(phrasesArr[index][counterArr[index]]).then(() => {
+      setTimeout(() => next(index), 1500);
+    });
+    counterArr[index] = (counterArr[index] + 1) % phrasesArr[index].length;
+  }
+} else {
+  console.log("L'elemento con classe 'text-scramble' non è stato trovato");
+}
+</script>
 
 </body>
