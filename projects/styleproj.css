@@ -172,6 +172,12 @@ img:hover {
     border-radius: 20px;
 }
 
+.i-container {
+    width: 94%;
+    margin: 3% 3%;
+    padding: 0% 0;
+}
+
 /* .img-container-big img {
     width: 100%;
     border-radius: 20px;
