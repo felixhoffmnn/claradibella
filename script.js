@@ -205,3 +205,4 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+//fine hide header on scroll down
