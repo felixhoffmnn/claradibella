@@ -123,7 +123,12 @@ user-select: none;
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    z-index: 4;
+    z-index: 100;
+    /* transition: top 0.8s ease-in-out; non funziona */
+}
+
+.nav-up {
+  top: -80px;
 }
 
 .menu-voice {
@@ -361,8 +366,8 @@ footer {
     font-size:1.5rem;
   }
 
-  footer {
-    font-size: 1rem;
+  .footer-voice {
+    font-size: 0.8rem;
 
   }
 
