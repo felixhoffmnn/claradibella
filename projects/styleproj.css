@@ -125,11 +125,14 @@ mark {
     margin-bottom: 1.5%;
 }
 
-.img-container-vert {
+[class*="img-container-vert"] {
     height: 70vh;
     overflow: hidden;
     border-radius: 20px;
     margin-bottom: 3%;
+}
+.img-container-vert-rize {
+    height: 88vh;
 }
 
 .img-container-big {
@@ -189,7 +192,7 @@ img:hover {
 
   .blur-down {
     filter: blur(0px);
-    transition: filter 2500ms;
+    transition: filter 1000ms;
   }
   
   .lozad {
@@ -267,14 +270,20 @@ img:hover {
         width:100%;
     }
 
+    [class*="img-container"] {
+        margin-bottom: 8%;
+    }
+
     .img-container-vert, .img-container-big, .img-container {
         height: 30vh;
-        margin-bottom: 8%;
+    }
+
+    .img-container-vert-rize {
+        height:100vh;
     }
 
     .img-container2 {
         height:40vh;
-        margin-bottom: 8%;
     }
 
     .i-container {
@@ -285,19 +294,16 @@ img:hover {
     .img-container-big-lv1 {
         height:6.7vh;
         border-radius: 10px;
-        margin-bottom: 8%;
     }
 
     .img-container-big-lv2 {
         height:4.6vh;
         border-radius: 8px;
-        margin-bottom: 8%;
     }
 
     .img-container-big-lv3 {
         height:10.5vh;
         border-radius: 8px;
-        margin-bottom: 8%;
     }
 
 
