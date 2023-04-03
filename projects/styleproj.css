@@ -111,14 +111,16 @@ mark {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-   
 }
 
 .img-container {
     height: 40vh;
     overflow: hidden;
     border-radius: 20px;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
+
 .img-container2 {
     height: 56vh;
     overflow: hidden;
@@ -127,11 +129,15 @@ mark {
     margin-bottom: 1.5%;
 }
 
+.mario {
+    height:55vh;
+}
+
 [class*="img-container-vert"] {
     height: 70vh;
     overflow: hidden;
     border-radius: 20px;
-    margin-bottom: 3%;
+    margin-bottom: 1.5%;
 }
 .img-container-vert-rize {
     height: 88vh;
@@ -141,8 +147,17 @@ mark {
     height: 70vh;
     overflow: hidden;
     border-radius: 20px;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
+
+.mario-big {
+    height: 90vh;
+}
+
+.mario-big img {
+    margin-top: -10%;
+}
+
 
 [class*="img-container-big-lv"] {
     overflow: hidden;
