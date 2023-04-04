@@ -281,7 +281,7 @@ ul {
     box-sizing: border-box;
     transition: ease .2s;
     position: absolute;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     transform: translate(-50%, -50%);
     z-index: -3;
     object-fit: cover;

@@ -61,7 +61,7 @@ mark {
 
 .video-container {
     position: relative;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-left: 8.3%;
     overflow: hidden;
     display: flex;
@@ -110,13 +110,13 @@ mark {
 .inline-img {
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .img-container {
     height: 40vh;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
@@ -124,7 +124,7 @@ mark {
 .img-container2 {
     height: 56vh;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
@@ -134,9 +134,9 @@ mark {
 }
 
 [class*="img-container-vert"] {
-    height: 70vh;
+    height: 67vh;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-bottom: 1.5%;
 }
 .img-container-vert-rize {
@@ -146,7 +146,7 @@ mark {
 .img-container-big {
     height: 70vh;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-top: 1.5%;
 }
 
@@ -161,7 +161,7 @@ mark {
 
 [class*="img-container-big-lv"] {
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin-top: 3%;
 }
 
@@ -179,7 +179,7 @@ mark {
 
 img {
     width: 100%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     transition: transform 1.5s;  
 }
 
@@ -189,7 +189,7 @@ img:hover {
 
 .img-container-vert img {
     width: 100%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .videomockup {

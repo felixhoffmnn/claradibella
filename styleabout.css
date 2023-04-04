@@ -18,12 +18,12 @@
 #foto {
     padding-right: 3%;
     overflow: hidden;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 #foto img {
     width:95%;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .pres-title {
