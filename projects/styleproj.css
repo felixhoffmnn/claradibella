@@ -27,6 +27,7 @@
     padding-bottom: 1.5%;
     align-self: flex-start;
     text-align: right;
+    margin-right: 0.5%;
 }
 
 .data {
@@ -113,20 +114,19 @@ mark {
     /* border-radius: 20px; */
 }
 
-.img-container {
-    height: 40vh;
+.img-container, .img-container2 {
     overflow: hidden;
     /* border-radius: 20px; */
     margin-top: 1.5%;
     margin-bottom: 1.5%;
 }
 
+.img-container {
+    height: 40vh;
+}
+
 .img-container2 {
-    height: 56vh;
-    overflow: hidden;
-    /* border-radius: 20px; */
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
+    height: 54vh;
 }
 
 .mario {
@@ -140,7 +140,7 @@ mark {
     margin-bottom: 1.5%;
 }
 .img-container-vert-rize {
-    height: 88vh;
+    height: 95vh;
 }
 
 .img-container-big {
@@ -177,13 +177,13 @@ mark {
     height: 31vh;
 }
 
-img {
+img, .videomockup {
     width: 100%;
     /* border-radius: 20px; */
     transition: transform 1.5s;  
 }
 
-img:hover {
+img:hover, .videomockup:hover {
     transform: scale(1.05);
 }
 
@@ -193,15 +193,14 @@ img:hover {
 }
 
 .videomockup {
-    width: 120%;
-    margin-top: -6%;
-    margin-left: -10%;
+    width: 145%;
+    margin-top: -8%;
+    margin-left: -22%;
 }
 
 .i-container {
-    width: 94%;
-    margin: 3% 3%;
-    padding: 0% 0;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
 /* .img-container-big img {
@@ -234,6 +233,7 @@ img:hover {
   .credits {
     font-family: "roc-grotesk", sans-serif;
     text-align: center;
+    padding-top: 1.5%;
     padding-bottom: 4%;
   }
 
@@ -289,16 +289,16 @@ img:hover {
         line-height: 1.2rem;
     }
 
-    .img-container-vert img {
-        width:100%;
-    }
-
     [class*="img-container"] {
         margin-bottom: 8%;
     }
 
-    .img-container-vert, .img-container-big, .img-container {
+     .img-container-big, .img-container {
         height: 30vh;
+    }
+
+    .img-container-vert {
+        height:75vh;
     }
 
     .img-container-vert-rize {
