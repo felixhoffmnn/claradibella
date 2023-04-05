@@ -52,6 +52,9 @@ user-select: none;
 .col-3 {
   width: 25.66%;
 }
+.col-3-4 {
+  width: 30%;
+}
 .col-4 {
   width: 33.33%;
 }

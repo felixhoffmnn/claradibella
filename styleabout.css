@@ -1,9 +1,9 @@
-#works, #linkedin, #curriculum {
+#works {
     filter:blur(2px);
     transition: filter .3s; 
 }
 
-#works:hover, #linkedin:hover, #curriculum:hover {
+#works:hover {
     filter:blur(0px);
 }
 
@@ -59,6 +59,22 @@ mark {
     background-position: 100% 0;
 }
 
+  #linkedin, #curriculum {
+    -webkit-animation: highlight2  normal 0.8s forwards;
+    animation: highlight2  normal 0.8s forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 210% 100%;
+    background-position: 0 0;
+}
+
+#linkedin:hover, #curriculum:hover {
+    -webkit-animation: highlight  normal 0.8s forwards;
+    animation: highlight  normal 0.8s forwards;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
 @-webkit-keyframes highlight {
     to {
       background-position: 0 0;
@@ -68,6 +84,24 @@ mark {
   @keyframes highlight {
     to {
       background-position: 0 0;
+    }
+  }
+
+  @-webkit-keyframes highlight2 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes highlight2 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
     }
   }
 

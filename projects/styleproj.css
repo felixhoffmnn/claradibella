@@ -47,6 +47,22 @@ mark {
    
 }
 
+.play span {
+    -webkit-animation: highlight2  normal 0.8s forwards;
+    animation: highlight2  normal 0.8s forwards;
+    background-color: none;
+    background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 210% 100%;
+    background-position: 0 0;
+}
+
+.play span:hover {
+    -webkit-animation: highlight  normal 0.8s forwards;
+    animation: highlight  normal 0.8s forwards;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
 @-webkit-keyframes highlight {
     to {
       background-position: 0 0;
@@ -56,6 +72,24 @@ mark {
   @keyframes highlight {
     to {
       background-position: 0 0;
+    }
+  }
+
+  @-webkit-keyframes highlight2 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  
+  @keyframes highlight2 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
     }
   }
   
@@ -95,6 +129,7 @@ mark {
     font-family: "roc-grotesk", sans-serif;
     padding-top: 5%;
     font-size: 1.2rem;
+    line-height: 1.5rem;
     padding-bottom: 5%;
     position: sticky;
     display: flex;
@@ -129,9 +164,9 @@ mark {
     height: 54vh;
 }
 
-.mario {
+/* .mario {
     height:55vh;
-}
+} */
 
 [class*="img-container-vert"] {
     height: 67vh;
@@ -154,8 +189,17 @@ mark {
     margin-top: 1.5%;
 }
 
+
+.mermaid-big {
+    height: 68vh;
+}
+
+.mermaid-big2 {
+    height: 78vh;
+}
+
 .mario-big {
-    height: 90vh;
+    height: 100vh;
 }
 
 .mario-big img {
@@ -185,11 +229,11 @@ img {
     width: 100%;
 }
 
-img, .videomockup, .videomockup-vert {
+img, .videomockup, .videomockup-vert, .videomockup-mermaid {
     transition: transform 1.5s;  
 }
 
-img:hover, .videomockup:hover, .videomockup-vert:hover {
+img:hover, .videomockup:hover, .videomockup-vert:hover, .videomockup-mermaid:hover {
     transform: scale(1.05);
 }
 
@@ -201,6 +245,10 @@ img:hover, .videomockup:hover, .videomockup-vert:hover {
     width: 145%;
     margin-top: -8%;
     margin-left: -22%;
+}
+
+.videomockup-mermaid {
+    width:100%;
 }
 
 .i-container {
@@ -282,6 +330,7 @@ img:hover, .videomockup:hover, .videomockup-vert:hover {
     .inline-img {
         display: block;
         font-size: 1rem;
+        line-height: 1.2rem;
     }
 
     .cartiglio {
@@ -298,7 +347,7 @@ img:hover, .videomockup:hover, .videomockup-vert:hover {
         margin-bottom: 8%;
     }
 
-     .img-container-big, .img-container {
+     .img-container-big, .img-container, .mermaid-big {
         height: 30vh;
     }
 
