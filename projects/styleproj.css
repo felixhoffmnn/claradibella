@@ -140,7 +140,11 @@ mark {
     margin-bottom: 1.5%;
 }
 .img-container-vert-rize {
-    height: 95vh;
+    height: 88vh;
+}
+.videomockup-vert {
+    margin-top: -5%;
+    width: 105%;
 }
 
 .img-container-big {
@@ -177,20 +181,21 @@ mark {
     height: 31vh;
 }
 
-img, .videomockup {
+img {
     width: 100%;
-    /* border-radius: 20px; */
+}
+
+img, .videomockup, .videomockup-vert {
     transition: transform 1.5s;  
 }
 
-img:hover, .videomockup:hover {
+img:hover, .videomockup:hover, .videomockup-vert:hover {
     transform: scale(1.05);
 }
 
-.img-container-vert img {
+/* .img-container-vert img {
     width: 100%;
-    /* border-radius: 20px; */
-}
+} */
 
 .videomockup {
     width: 145%;
