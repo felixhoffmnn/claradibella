@@ -227,9 +227,9 @@ img:hover, .videomockup:hover, .videomockup-vert:hover {
   }
 
   .play {
-    font-family: "Neue Machina", sans-serif;
-    text-decoration: underline;
-    font-size: 2rem;
+    font-family: "roc-grotesk", sans-serif;
+  
+    font-size: 1.7rem;
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: center;
