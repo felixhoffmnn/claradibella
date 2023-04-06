@@ -253,21 +253,16 @@ ul {
   .follow-img {
     display: none;
     width: 70%;
-    height: auto;
-    max-width: 600px;
-    box-sizing: border-box;
     transition: ease .2s;
     position: absolute;
     /* border-radius: 20px; */
     transform: translate(-50%, -50%);
     z-index: -3;
-    object-fit: cover;
   }
 
   .description {
     display: none;
     width: 70%;
-    height: auto;
     max-width: 900px;
     position: absolute;
     font-family: "roc-grotesk", sans-serif;
@@ -289,6 +284,11 @@ ul {
     top: 100px;
   }
 
+  /* così l'ultima immagine non esce dal fondo */
+  #description7 {
+    margin-top: -6%;
+  }
+
   #description1 p span,
   #description2 p span,
   #description3 p span,
@@ -308,8 +308,6 @@ footer {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
     bottom:0; left:0;
     width:100%;
 }

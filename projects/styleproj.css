@@ -202,10 +202,6 @@ mark {
     height: 100vh;
 }
 
-.mario-big img {
-    margin-top: -10%;
-}
-
 
 [class*="img-container-big-lv"] {
     overflow: hidden;

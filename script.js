@@ -121,9 +121,9 @@ const fx = new TextScramble(textScrambleElems);
 const phrases = [
     'Visual designer',
     'Front-end nerd',
-    'Troublemaker',
     'Communication design student',
-    'Dead inside'
+    'Troublemaker',
+    'Graphic designer'
 ];
 let counter = 0;
 const next = () => {
