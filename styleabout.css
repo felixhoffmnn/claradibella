@@ -9,6 +9,7 @@
 
 .presentation {
     display: flex;
+    position: inherit;
     margin-left: 8.3%;
     padding-top: 8%;
     -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -116,18 +117,33 @@ mark {
         display: block;
         padding-left: 0%;
         margin-left: 0%;
-        width: 90%;
+        width: 100%;
     }
 
     #foto {
         padding-right: 0%;
         margin-right: 0%;
     }
+
     #foto img {
         width: 100%;
         padding-right: 0%;
         
     }
-/* funziona? */
+
+    .pres-title {
+      font-size: 1.8rem;
+    }
+
+    .pres-text {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      width: 100%;
+      padding-bottom: 25%;
+    }
+
+    #curriculum, #linkedin {
+      margin-bottom:3%;
+    }
   }
     

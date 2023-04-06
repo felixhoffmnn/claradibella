@@ -333,6 +333,11 @@ footer {
     flex-direction: row;
   }
 
+  .container-mobile  {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
   #name {
     font-size: 3.2rem;
   }
@@ -343,6 +348,7 @@ footer {
 
   .footer-voice {
     font-size: 0.8rem;
+    padding-bottom: 2%;
 
   }
 
@@ -355,10 +361,10 @@ footer {
     padding-bottom: 35%;
   }
 
-  .container-mobile  {
-    padding-left: 5%;
-    padding-right: 5%;
-}
+  #sign {
+    display: none;
+  }
+ 
 
 }
 

@@ -125,7 +125,7 @@ mark {
     padding-right: 7%;
 }
 
-.brief {
+.text {
     font-family: "roc-grotesk", sans-serif;
     padding-top: 5%;
     font-size: 1.2rem;
@@ -322,7 +322,7 @@ img:hover, .videomockup:hover, .videomockup-vert:hover, .videomockup-mermaid:hov
         width: 100%;
     }
 
-    .brief,
+    .text,
     .inline-img {
         display: block;
         font-size: 1rem;
