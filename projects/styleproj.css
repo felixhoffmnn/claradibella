@@ -331,12 +331,20 @@ img:hover, .videomockup:hover, .videomockup-vert:hover, .videomockup-mermaid:hov
 
     .cartiglio {
         font-size: 4rem;
-        padding-top: 30%;
+        padding-top: 15%;
     }
 
-    .proj-attribute {
+    .proj-title {
+        font-size: 2.7rem;
+    }
+
+    .proj-attribute, .data {
         font-size: 1rem;
         line-height: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
     }
 
     [class*="img-container"] {

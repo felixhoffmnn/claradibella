@@ -338,12 +338,21 @@ footer {
     padding-right: 5%;
 }
 
+.myHeader {
+  padding-top: 2%;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
   #name {
     font-size: 3.2rem;
   }
 
   .text-scramble {
-    font-size:1.5rem;
+    font-size: 1.2rem;
   }
 
   .footer-voice {
@@ -364,7 +373,6 @@ footer {
   #sign {
     display: none;
   }
- 
 
 }
 
