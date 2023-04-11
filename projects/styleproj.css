@@ -387,6 +387,14 @@ img:hover, .videomockup:hover, .videomockup-vert:hover, .videomockup-mermaid:hov
         border-radius: 8px;
     }
 
+    .mermaid-big {
+        height: 23vh;
+    }
+
+    #banner-mobile {
+        height: 10vh;
+    }
+
 
   [class*="img-container-big-lv"] img {
     border-radius: 8px;
