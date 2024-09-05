@@ -1,141 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Claravaggio</title>
     <!--link per rendere il css funzionale per qualsiasi browser, reset css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://use.typekit.net/wgf7pqs.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleabout.css">
-    
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/wgf7pqs.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleabout.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="myHeader">
-        <a href="index.html#proj-container" class="menu-voice" id="works"><p>works</p></a>
-       <a href="about.html" class="menu-voice" id="about"><p>about</p></a>
-   </header>
+      <a href="index.html#proj-container" class="menu-voice" id="works"
+        ><p>works</p></a
+      >
+      <a href="about.html" class="menu-voice" id="about"><p>about</p></a>
+    </header>
 
-   <div class="container-mobile">
-
-    <div class="col-10 offset-1 presentation">
-
-        <div class="col-5"id="foto">
-            <img src="./assets/ritratto.jpg">
+    <div class="container-mobile">
+      <div class="col-10 offset-1 presentation">
+        <div class="col-5" id="foto">
+          <img src="./assets/ritratto.jpg" />
         </div>
 
         <div class="pres-text">
-            <div class="pres-title">
-            <mark>Hi! I'm <span class="text-scramble-about">Clara Di Bella</span></mark>
-            </div>
-            <div>
-              Born in Milan in 2001, grew up with Super Mario, Lego and Flashgames.
-              I studied at Nanni Valentini Art School in Monza, immediately falling in love with graphic design. 
-              The follow up was natural, enrolling in Communication Design at Politecnico di Milano. 
-              Here I had the chance to expand my passion, see all the aspects of it and understand 
-              what interested me most. From playing video games, to trying to build them: 
-              I love the world of web design and interfaces. In my spare time, 
-              I write songs that I sing and play with my guitar, and I travel as cheaply as I can.
-            </div>
-            <div id="curriculum"><a href="https://drive.google.com/file/d/18gAoP_ANk5k5ZUpFtQyuCJ1UchpGgGj1/view?usp=sharing" target="_blank">Curriculum</a></div>
-            <div id="linkedin"><a href="https://www.linkedin.com/in/clara-di-bella/" target="_blank">LinkedIn</a></div>
+          <div class="pres-title">
+            <mark
+              >Hi! I'm
+              <span class="text-scramble-about">Clara Di Bella</span></mark
+            >
+          </div>
+          <div>
+            Born in Milan in 2001, grew up with Super Mario, Lego and
+            Flashgames. I studied at Nanni Valentini Art School in Monza,
+            immediately falling in love with graphic design. The follow up was
+            natural, enrolling in Communication Design at Politecnico di Milano.
+            Here I had the chance to expand my passion, see all the aspects of
+            it and understand what interested me most. From playing video games,
+            to trying to build them: I love the world of web design and
+            interfaces. In my spare time, I write songs that I sing and play
+            with my guitar, and I travel as cheaply as I can.
+          </div>
+          <div id="curriculum">
+            <a
+              href="https://drive.google.com/file/d/18gAoP_ANk5k5ZUpFtQyuCJ1UchpGgGj1/view?usp=sharing"
+              target="_blank"
+              >Curriculum</a
+            >
+          </div>
+          <div id="linkedin">
+            <a
+              href="https://www.linkedin.com/in/clara-di-bella/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
         </div>
+      </div>
+    </div>
 
-   </div>
+    <footer>
+      <a
+        href="https://www.instagram.com/claravaggio/"
+        target="_blank"
+        class="footer-voice"
+        >@claravaggio</a
+      >
+      <p class="footer-voice" id="sign">Clara Di Bella &#169; 2024</p>
+      <p class="footer-voice">
+        <a href="mailto:claradibella2@gmail.com">claradibella2@gmail.com</a>
+      </p>
+    </footer>
+  </body>
 
-</div>
-
-   <footer>
-    <a href="https://www.instagram.com/claravaggio/" target="_blank" class="footer-voice">@claravaggio</a>
-    <p class="footer-voice" id="sign">Clara Di Bella &#169; 2023</p>
-    <p class="footer-voice"><a href="mailto:claradibella2@gmail.com">claradibella2@gmail.com</a></p>
-</footer>
-
-</body>
-
-<script>
-  //codice per scramble text
-class TextScramble {
-  constructor(el) {
-    this.el = el;
-    this.chars = "!_[]_";
-    this.update = this.update.bind(this);
-    
-  }
-  setText(newText) {
-    const oldText = this.el.innerText;
-    const length = Math.max(oldText.length, newText.length);
-    const promise = new Promise((resolve) => (this.resolve = resolve));
-    this.queue = [];
-    for (let i = 0; i < length; i++) {
-      const from = oldText[i] || "";
-      const to = newText[i] || "";
-      const start = Math.floor(Math.random() * 40);
-      const end = start + Math.floor(Math.random() * 40);
-      this.queue.push({ from, to, start, end });
-    }
-    cancelAnimationFrame(this.frameRequest);
-    this.frame = 0;
-    this.update();
-    return promise;
-  
-  }
-  update() {
-    let output = "";
-    let complete = 0;
-    for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i];
-      if (this.frame >= end) {
-        complete++;
-        output += to;
-      } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.28) {
-          char = this.randomChar();
-          this.queue[i].char = char;
+  <script>
+    //codice per scramble text
+    class TextScramble {
+      constructor(el) {
+        this.el = el;
+        this.chars = "!_[]_";
+        this.update = this.update.bind(this);
+      }
+      setText(newText) {
+        const oldText = this.el.innerText;
+        const length = Math.max(oldText.length, newText.length);
+        const promise = new Promise((resolve) => (this.resolve = resolve));
+        this.queue = [];
+        for (let i = 0; i < length; i++) {
+          const from = oldText[i] || "";
+          const to = newText[i] || "";
+          const start = Math.floor(Math.random() * 40);
+          const end = start + Math.floor(Math.random() * 40);
+          this.queue.push({ from, to, start, end });
         }
-        output += `<span class="dud">${char}</span>`;
-      } else {
-        output += from;
+        cancelAnimationFrame(this.frameRequest);
+        this.frame = 0;
+        this.update();
+        return promise;
+      }
+      update() {
+        let output = "";
+        let complete = 0;
+        for (let i = 0, n = this.queue.length; i < n; i++) {
+          let { from, to, start, end, char } = this.queue[i];
+          if (this.frame >= end) {
+            complete++;
+            output += to;
+          } else if (this.frame >= start) {
+            if (!char || Math.random() < 0.28) {
+              char = this.randomChar();
+              this.queue[i].char = char;
+            }
+            output += `<span class="dud">${char}</span>`;
+          } else {
+            output += from;
+          }
+        }
+        this.el.innerHTML = output;
+        if (complete === this.queue.length) {
+          this.resolve();
+        } else {
+          this.frameRequest = requestAnimationFrame(this.update);
+          this.frame++;
+        }
+      }
+      randomChar() {
+        return this.chars[Math.floor(Math.random() * this.chars.length)];
       }
     }
-    this.el.innerHTML = output;
-    if (complete === this.queue.length) {
-      this.resolve();
+
+    const textScrambleElems = document.querySelector(".text-scramble-about");
+
+    if (textScrambleElems) {
+      const fx = new TextScramble(textScrambleElems);
+      const phrases = ["Clara Di Bella", "Claravaggio"];
+      let counter = 0;
+      const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+          setTimeout(next, 1500);
+        });
+        counter = (counter + 1) % phrases.length;
+      };
+
+      next();
     } else {
-      this.frameRequest = requestAnimationFrame(this.update);
-      this.frame++;
+      console.log("L'elemento con id 'text-scramble' non è stato trovato");
     }
-    
-  }
-  randomChar() {
-    return this.chars[Math.floor(Math.random() * this.chars.length)];
-  }
-}
-
-
-const textScrambleElems = document.querySelector(".text-scramble-about");
-
-if (textScrambleElems) {
-const fx = new TextScramble(textScrambleElems);
-const phrases = [
-    'Clara Di Bella',
-    'Claravaggio'
-];
-let counter = 0;
-const next = () => {
-  fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 1500);
-  });
-  counter = (counter + 1) % phrases.length;
-};
-
-next();
-} else {
-console.log("L'elemento con id 'text-scramble' non è stato trovato");
-}
-</script>
+  </script>
+</html>
