@@ -147,16 +147,14 @@ mark {
 .title {
   font-weight: 600;
   font-size: 1.8rem;
-  padding-bottom: 5%;
-  padding-right: 7%;
 }
 
 .text {
   font-family: "roc-grotesk", sans-serif;
-  padding-top: 5%;
+  padding-top: 1%;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
   position: sticky;
   display: flex;
   justify-content: center;
@@ -175,17 +173,59 @@ mark {
   /* border-radius: 20px; */
 }
 
-.img-container,
-.img-container2 {
-  overflow: hidden;
-  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.img-container {
+  position: relative;
+  overflow: hidden; /* Nascondiamo la parte fuori dal container */
 }
 
-.img-container2 {
-  height: 54vh;
+/* REVEAL IMMAGINI */
+/* Immagine che si ingrandisce */
+.reveal-image {
+  width: 100%;
+  display: block;
+  transform: scale(1.05); /* Leggero ingrandimento iniziale */
+  opacity: 0; /* Nascondi completamente l'immagine finché non viene rivelata */
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out; /* Transizione sia per opacità che per scala */
 }
+
+/* Maschera che copre l'immagine */
+.reveal-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e8e8e8; /* Puoi cambiare colore se necessario */
+  transform-origin: bottom; /* L'animazione partirà dall'alto */
+  transform: scaleY(
+    1
+  ); /* La maschera copre completamente l'immagine all'inizio */
+  z-index: 100; /* Posiziona la maschera sopra l'immagine */
+  transition: transform 0.8s ease-in-out; /* Effetto di reveal */
+}
+
+/* Ritardo per la maschera */
+.reveal-mask.delay-mask {
+  transition-delay: 0.2s; /* Aggiungi ritardo per la maschera */
+}
+
+/* Quando l'immagine è visibile, la maschera si "restringe" */
+.reveal-image.visible + .reveal-mask {
+  transform: scaleY(0); /* La maschera si riduce in altezza fino a scomparire */
+}
+
+/* Effetto quando l'immagine è visibile */
+.reveal-image.visible {
+  opacity: 1;
+  transform: scale(1); /* Torna alla scala normale */
+}
+
+/* Aggiungi un ritardo per la seconda immagine */
+.reveal-image.delay {
+  transition-delay: 0.5s; /* Ritardo di 0.2s per la seconda immagine */
+}
+/* FINE REVEAL */
+
 @-webkit-keyframes scale-in-ver-top {
   0% {
     -webkit-transform: scaleY(0);

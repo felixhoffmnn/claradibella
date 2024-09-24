@@ -1,4 +1,47 @@
-//codice per deblurrare le immagini allo scroll
+// Funzione per osservare l'entrata dell'immagine nel viewport
+const revealOnScroll = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const container = img.parentElement;
+
+        // Trova tutte le immagini nella stessa riga (nella stessa classe di colonne, ad esempio col-3p)
+        const imagesInRow = Array.from(container.parentElement.children);
+
+        // Trova la posizione dell'immagine corrente nella riga
+        const position = imagesInRow.indexOf(container);
+
+        // Calcola un ritardo progressivo: ad esempio 0.3s per ogni posizione
+        const delay = (position / 2) * 0.2; // Modifica 0.3s per un ritardo maggiore o minore
+
+        // Imposta il ritardo su maschera e immagine
+        img.style.transitionDelay = `${delay}s`;
+        const mask = container.querySelector(".reveal-mask");
+        if (mask) {
+          mask.style.transitionDelay = `${delay}s`;
+        }
+
+        // Aggiungi la classe per far apparire l'immagine e rimuovere la maschera
+        img.classList.add("visible");
+        observer.unobserve(entry.target); // Una volta rivelato, smetti di osservare
+      }
+    });
+  },
+  { threshold: 0.2 } // 0.2 significa che il 20% dell'elemento deve essere visibile
+);
+
+// Seleziona tutte le immagini con la classe reveal-image
+document.querySelectorAll(".reveal-image").forEach((image) => {
+  revealOnScroll.observe(image);
+});
+
+// Seleziona tutte le immagini con la classe reveal-image
+document.querySelectorAll(".reveal-image").forEach((image) => {
+  revealOnScroll.observe(image);
+});
+
+//CODICE PER DEBLURRARE ALLO SCROLL
 const observer = lozad(".lozad", {
   rootMargin: "50px 0px", // margine root per il controllo dell'area di visualizzazione dell'immagine
   threshold: 0.1, // soglia di visibilità dell'immagine
