@@ -111,9 +111,53 @@ body {
   margin-left: 50%;
 }
 
-.offset-7 {
+/* .offset-7 {
   margin-left: 58.33%;
+} */
+
+/* PROVA */
+/* Contenitore principale delle colonne */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: max(16px, 1vw); /* Gap massimo di 16px tra le immagini e ai lati */
+  box-sizing: border-box;
+  padding-left: max(16px, 1vw); /* Padding costante ai lati del contenitore */
+  /* padding-right: max(16px, 1vw); Padding costante ai lati del contenitore */
 }
+
+/* Definizione delle colonne per le immagini */
+.col-1p,
+.col-2p,
+.col-3p,
+.col-4p,
+.col-5p,
+.col-6p {
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+/* Esempio per colonne in percentuali */
+.col-1p {
+  width: calc(16.66% - max(16px, 1vw)); /* Larghezza colonna meno il gap */
+}
+.col-2p {
+  width: calc(33.33% - max(16px, 1vw));
+}
+.col-3p {
+  width: calc(50% - max(16px, 1vw));
+}
+.col-4p {
+  width: calc(66.66% - max(16px, 1vw));
+}
+.col-5p {
+  width: calc(83.33% - max(16px, 1vw));
+}
+.col-6p {
+  width: calc(100% - max(16px, 1vw));
+}
+/* FINE PROVA */
 
 .myHeader {
   position: fixed;
