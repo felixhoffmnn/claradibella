@@ -1,3 +1,26 @@
+// Funzione per osservare l'entrata dei testi nel viewport
+const revealTextOnScroll = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const text = entry.target;
+
+        // Aggiungi la classe per avviare l'animazione del testo
+        text.classList.add("text-animate");
+
+        // Una volta animato, smetti di osservare per migliorare le prestazioni
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 } // Il 10% del testo deve essere visibile per far partire l'animazione
+);
+
+// Seleziona tutti i testi con la classe reveal-text
+document.querySelectorAll(".reveal-text").forEach((text) => {
+  revealTextOnScroll.observe(text);
+});
+
 // Funzione per osservare l'entrata dell'immagine nel viewport
 const revealOnScroll = new IntersectionObserver(
   (entries, observer) => {

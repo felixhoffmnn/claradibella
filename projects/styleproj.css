@@ -45,7 +45,7 @@
   font-size: 1.4rem;
   line-height: 1.9rem;
   font-weight: 400;
-  padding-bottom: 1.5%;
+  /* padding-bottom: 1.5%; */
   align-self: flex-start;
   text-align: right;
   /* margin-right: 0.5%; */
@@ -145,19 +145,36 @@ mark {
 }
 
 .title {
+  font-family: "roc-grotesk", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 15vh;
 }
 
 .text {
   font-family: "roc-grotesk", sans-serif;
-  padding-top: 1%;
+  /* padding-top: 1%; */
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding-bottom: 1%;
+  /* padding-bottom: 1%; */
   position: sticky;
   display: flex;
   justify-content: center;
+  align-self: end;
+}
+
+.text-animate {
+  -webkit-animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+  -webkit-animation-delay: 0.3s; /* Aggiungi il delay */
+  animation-delay: 0.3s; /* Aggiungi il delay */
+}
+
+.empty-space {
+  height: 20vh;
 }
 
 /* .cartiglio,
@@ -183,7 +200,7 @@ mark {
 .reveal-image {
   width: 100%;
   display: block;
-  transform: scale(1.05); /* Leggero ingrandimento iniziale */
+  transform: scale(1.3); /* Leggero ingrandimento iniziale */
   opacity: 0; /* Nascondi completamente l'immagine finché non viene rivelata */
   transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out; /* Transizione sia per opacità che per scala */
 }
