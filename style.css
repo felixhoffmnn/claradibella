@@ -210,10 +210,10 @@ body {
 .proj {
   position: relative;
   font-family: "Neue Machina", sans-serif;
-  font-size: 4rem;
-  padding: 1.5%;
+  font-size: 3.8rem;
+  padding: 0.8%;
   padding-left: 5%;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 a {
@@ -257,7 +257,11 @@ ul {
 .proj6:hover #cover6,
 .proj6:hover #description6,
 .proj7:hover #cover7,
-.proj7:hover #description7 {
+.proj7:hover #description7,
+.proj8:hover #cover8,
+.proj8:hover #description8,
+.proj9:hover #cover9,
+.proj9:hover #description9 {
   display: block;
   -webkit-animation: text-focus-in 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
@@ -317,14 +321,16 @@ ul {
 #description4 p,
 #description5 p,
 #description6 p,
-#description7 p {
+#description7 p,
+#description8 p,
+#description9 p {
   display: block;
   padding-left: 50%;
   top: 100px;
 }
 
 /* così l'ultima immagine non esce dal fondo */
-#description7 {
+#description9 {
   margin-top: -6%;
 }
 
@@ -334,12 +340,14 @@ ul {
 #description4 p span,
 #description5 p span,
 #description6 p span,
-#description7 p span {
+#description7 p span,
+#description8 p span,
+#description9 p span {
   background-color: #ff7f3c;
 }
 
-.proj7 {
-  padding-bottom: 10%;
+.proj9 {
+  padding-bottom: 8%;
 }
 
 footer {
