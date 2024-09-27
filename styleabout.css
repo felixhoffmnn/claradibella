@@ -1,149 +1,151 @@
 #works {
-    filter:blur(2px);
-    transition: filter .3s; 
+  filter: blur(2px);
+  transition: filter 0.3s;
 }
 
 #works:hover {
-    filter:blur(0px);
+  filter: blur(0px);
 }
 
 .presentation {
-    display: flex;
-    position: inherit;
-    margin-left: 8.3%;
-    padding-top: 8%;
-    -webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  display: flex;
+  position: inherit;
+  margin-left: 8.3%;
+  padding-top: 8%;
+  -webkit-animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 #foto {
-    padding-right: 3%;
-    overflow: hidden;
-    /* border-radius: 20px; */
+  padding-right: 3%;
+  overflow: hidden;
+  /* border-radius: 20px; */
 }
 
 #foto img {
-    width:95%;
-    /* border-radius: 20px; */
+  width: 95%;
+  /* border-radius: 20px; */
 }
 
 .pres-title {
-    font-family: "Neue Machina", sans-serif;
-    font-size: 3.5rem;
-    margin-top: 3%;
-    padding-bottom: 8%;
+  font-family: "Neue Machina", sans-serif;
+  font-size: 3.5rem;
+  margin-top: 3%;
+  padding-bottom: 8%;
 }
 
 .pres-text {
-    font-family: "roc-grotesk", sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.7rem;
-    width: 53.5%;
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  /* line-height: 1.7rem; */
+  width: 53.5%;
 }
 
-#curriculum, #linkedin {
-    position: absolute;
-    bottom: 4%;
+#curriculum,
+#linkedin {
+  position: absolute;
+  bottom: 4%;
 }
 
 #linkedin {
-    right: 5%;
+  right: 5%;
 }
 
 mark {
-    -webkit-animation: 1s highlight  normal 0.5s forwards;
-    animation: 1s highlight  normal 0.5s forwards;
-    background-color: none;
-    background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
-    background-size: 200% 100%;
-    background-position: 100% 0;
+  -webkit-animation: 1s highlight normal 0.5s forwards;
+  animation: 1s highlight normal 0.5s forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #ff7f3c 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
 }
 
-  #linkedin, #curriculum {
-    -webkit-animation: highlight2  normal 0.8s forwards;
-    animation: highlight2  normal 0.8s forwards;
-    background-color: none;
-    background: linear-gradient(90deg, #FF7F3C 50%, rgba(255, 255, 255, 0) 50%);
-    background-size: 210% 100%;
-    background-position: 0 0;
+#linkedin,
+#curriculum {
+  -webkit-animation: highlight2 normal 0.8s forwards;
+  animation: highlight2 normal 0.8s forwards;
+  background-color: none;
+  background: linear-gradient(90deg, #ff7f3c 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 210% 100%;
+  background-position: 0 0;
 }
 
-#linkedin:hover, #curriculum:hover {
-    -webkit-animation: highlight  normal 0.8s forwards;
-    animation: highlight  normal 0.8s forwards;
-    background-size: 200% 100%;
-    background-position: 100% 0;
+#linkedin:hover,
+#curriculum:hover {
+  -webkit-animation: highlight normal 0.8s forwards;
+  animation: highlight normal 0.8s forwards;
+  background-size: 200% 100%;
+  background-position: 100% 0;
 }
 
 @-webkit-keyframes highlight {
-    to {
-      background-position: 0 0;
-    }
+  to {
+    background-position: 0 0;
   }
-  
-  @keyframes highlight {
-    to {
-      background-position: 0 0;
-    }
+}
+
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+
+@-webkit-keyframes highlight2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes highlight2 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container-mobile {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
-  @-webkit-keyframes highlight2 {
-    from {
-        background-position: 0 0;
-    }
-    to {
-      background-position: 100% 0;
-    }
-  }
-  
-  @keyframes highlight2 {
-    from {
-        background-position: 0 0;
-    }
-    to {
-      background-position: 100% 0;
-    }
+  .presentation {
+    display: block;
+    padding-left: 0%;
+    margin-left: 0%;
+    width: 100%;
   }
 
-  @media only screen and (max-width: 800px) {
-
-    .container-mobile  {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .presentation {
-        display: block;
-        padding-left: 0%;
-        margin-left: 0%;
-        width: 100%;
-    }
-
-    #foto {
-        padding-right: 0%;
-        margin-right: 0%;
-    }
-
-    #foto img {
-        width: 100%;
-        padding-right: 0%;
-        
-    }
-
-    .pres-title {
-      font-size: 1.8rem;
-    }
-
-    .pres-text {
-      font-size: 1rem;
-      line-height: 1.4rem;
-      width: 100%;
-      padding-bottom: 25%;
-    }
-
-    #curriculum, #linkedin {
-      margin-bottom:3%;
-    }
+  #foto {
+    padding-right: 0%;
+    margin-right: 0%;
   }
-    
+
+  #foto img {
+    width: 100%;
+    padding-right: 0%;
+  }
+
+  .pres-title {
+    font-size: 1.8rem;
+  }
+
+  .pres-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 100%;
+    padding-bottom: 25%;
+  }
+
+  #curriculum,
+  #linkedin {
+    margin-bottom: 3%;
+  }
+}
