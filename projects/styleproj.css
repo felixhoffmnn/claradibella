@@ -58,7 +58,7 @@
 .data {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: inline-block;
   vertical-align: top;
   -webkit-animation: text-focus-in 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
