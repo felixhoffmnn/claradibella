@@ -205,3 +205,9 @@ function hasScrolled() {
   lastScrollTop = st;
 }
 //fine hide header on scroll down
+
+// per scrollare da works
+function scrollToSection() {
+  const section = document.getElementById("proj-container");
+  section.scrollIntoView({ behavior: "smooth" });
+}
