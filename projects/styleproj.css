@@ -461,7 +461,7 @@ footer {
     line-height: 1.2rem;
   }
 
-  .cartiglio {
+  .proj-title {
     font-size: 4rem;
     padding-top: 15%;
   }
@@ -477,57 +477,7 @@ footer {
   }
 
   [class*="img-container"] {
-    margin-bottom: 8%;
-  }
-
-  .img-container-big,
-  .img-container,
-  .mermaid-big {
-    height: 30vh;
-  }
-
-  .img-container-vert {
-    height: 75vh;
-  }
-
-  .img-container-vert-rize {
-    height: 100vh;
-  }
-
-  .img-container2 {
-    height: 40vh;
-  }
-
-  .i-container {
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  .img-container-big-lv1 {
-    height: 6.7vh;
-    border-radius: 10px;
-  }
-
-  .img-container-big-lv2 {
-    height: 4.6vh;
-    border-radius: 8px;
-  }
-
-  .img-container-big-lv3 {
-    height: 10.5vh;
-    border-radius: 8px;
-  }
-
-  .mermaid-big {
-    height: 23vh;
-  }
-
-  #banner-mobile {
-    height: 10vh;
-  }
-
-  [class*="img-container-big-lv"] img {
-    border-radius: 8px;
+    margin-bottom: 4%;
   }
 
   .play {
