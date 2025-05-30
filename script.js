@@ -115,7 +115,7 @@ if (textScrambleElems) {
     "Front-end nerd",
     "Interaction design student",
     "Troublemaker",
-    "Arduino lover",
+    "UX/UI lover",
   ];
   let counter = 0;
   const next = () => {
