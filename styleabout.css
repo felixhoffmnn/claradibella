@@ -45,8 +45,9 @@
 
 #curriculum,
 #linkedin {
-  position: absolute;
-  bottom: 4%;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-right: 2rem;
 }
 
 #linkedin {
@@ -141,11 +142,14 @@ mark {
     font-size: 1rem;
     line-height: 1.4rem;
     width: 100%;
-    padding-bottom: 25%;
+    padding-bottom: 2rem;
   }
 
   #curriculum,
   #linkedin {
-    margin-bottom: 3%;
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 0;
   }
 }
